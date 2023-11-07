@@ -2,7 +2,7 @@ import { defineConfig } from "cypress";
 
 export default defineConfig({
   e2e: {
-    baseUrl: "http://localhost:4200/pages",
+    baseUrl: "http://localhost:4200/",
     retries: {
       openMode: 1,
       runMode: 1
