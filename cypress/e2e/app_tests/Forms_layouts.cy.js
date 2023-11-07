@@ -6,8 +6,8 @@
 
 /// <reference types="cypress" />
 
-describe('Forms', () => {
-    it('Check text', () => {
+describe('Form', () => {
+    it('validate form "form name"', () => {
         cy.visit('/pages/forms/layouts');
         cy.get('#inputEmail3').clear().type('alisa.shevchenko747@gmail.com');
         cy.get('#inputPassword3').clear().type('123456');
