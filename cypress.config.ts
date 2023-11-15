@@ -8,8 +8,8 @@ export default defineConfig({
       runMode: 1
     },
     watchForFileChanges: false,
-    viewportHeight: 1080,
-    viewportWidth: 1920,
+    viewportHeight: 1200,
+    viewportWidth: 1200,
     specPattern: "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
     setupNodeEvents(on, config) {
       // implement node event listeners here
