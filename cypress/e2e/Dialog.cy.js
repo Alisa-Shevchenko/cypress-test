@@ -6,16 +6,14 @@
 
 /// <reference types="cypress" />
 
-describe('Modal-overlays', () => {
-    it('Check modal window', () => {
-        cy.visit('/pages/modal-overlays/dialog');
-        cy.get('.result-from-dialog > .appearance-filled').click();
-        cy.get('.cdk-overlay-pane');
-        cy.get('.ng-star-inserted > nb-card > nb-card-header').should('have.text', 'Enter your name');
-        cy.get('.ng-star-inserted > nb-card > nb-card-body > .size-medium');
-        cy.get('.cancel');
-        cy.get('.status-success')
+import { url } from '../testData/testData';
+import { navigateTo } from '../modules/navigation';
+import { checkItemsOnTheDialogModal } from '../modules/dialog';
 
+describe('Modal-overlays', () => {
+    it('Check items on the dialog modal window', () => {
+        navigateTo(url.dialog);
+        checkItemsOnTheDialogModal()
     })
 
 })
